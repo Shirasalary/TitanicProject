@@ -35,6 +35,7 @@ public class Constants {
 
     public static final int ID_KIND = 1, TICKET_COST_KIND = 2;
     public static final int REGULAR_LABEL = 1, ANSWER_LABEL = 2;
+    public static final int SIB_SP_KIND = 1, PARCH_KIND = 2,CABIN_KIND = 3,TICKET_NUM_KIND = 4  ;
 
     public static final int CREATE_PRESENT = 100;
     public static final int ID_INDEX = 0, SURVIVED_INDEX = 1 , CLASS_INDEX = 2,LAST_NAME_INDEX = 3

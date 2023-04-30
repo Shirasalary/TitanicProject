@@ -32,7 +32,7 @@ public class FilterData {
 
         this.filterButton.addActionListener((e) -> {
 
-            if (checkUserEnterValid(minPassengerIdText,maxPassengerIdText,minTicketCostText,maxTicketCostText))
+            if (checkUserEnterValid(minPassengerIdText,maxPassengerIdText,minTicketCostText,maxTicketCostText,sibSpText,parchText,cabinNumText,ticketNumText))
             {
                 List<Passenger> filterData= filterByParameters(classComboBox,genderComboBox, embarkedComboBox, minPassengerIdText,
                         maxPassengerIdText, minTicketCostText, maxTicketCostText ,
@@ -83,7 +83,8 @@ public class FilterData {
         return only;
     }
 
-    private boolean checkUserEnterValid(JTextField minPassengerIdText,JTextField maxPassengerIdText,JTextField minTicketCostText,JTextField maxTicketCostText )
+    private boolean checkUserEnterValid(JTextField minPassengerIdText,JTextField maxPassengerIdText,JTextField minTicketCostText,JTextField maxTicketCostText
+    ,JTextField sibSpText,JTextField parchText, JTextField cabinNumText ,JTextField ticketNumText)
     {
         boolean result = true;
         if (!isMinAndMaxDataValid(minPassengerIdText.getText(),maxPassengerIdText.getText(),Constants.ID_KIND))
@@ -96,6 +97,47 @@ public class FilterData {
             result = false;
         }
 
+        if (!isOnlyOneDigit(sibSpText,Constants.SIB_SP_KIND))
+        {
+            result = false;
+        }
+        if (!isOnlyOneDigit(parchText,Constants.PARCH_KIND))
+        {
+            result = false;
+        }
+        if (!isOnlyOneDigit(cabinNumText,Constants.CABIN_KIND))
+        {
+            result = false;
+        }
+        if (!isOnlyOneDigit(ticketNumText,Constants.TICKET_NUM_KIND))
+        {
+            result = false;
+        }
+
+        return result;
+    }
+
+    private boolean isOnlyOneDigit(JTextField toCheck , int kind)
+    {
+        boolean result = true;
+        if (!toCheck.getText().equals(Constants.EMPTY_TEXT_FIELD))
+        {
+            if (toCheck.getText().length() > 1 || !isOnlyNumbers(toCheck.getText()))
+            {
+                if (kind == Constants.SIB_SP_KIND)
+                {
+                    CreateNew.showMessage(this.window,"Please enter only one digit to SibSp");
+                } else if (kind == Constants.PARCH_KIND) {
+                    CreateNew.showMessage(this.window,"Please enter only one digit to parch");
+                } else if (kind == Constants.CABIN_KIND) {
+                    CreateNew.showMessage(this.window,"Please enter only one digit to cabin num");
+                } else if (kind == Constants.TICKET_NUM_KIND) {
+                    CreateNew.showMessage(this.window,"Please enter only one digit to ticket num");
+                }
+
+                result = false;
+            }
+        }
         return result;
     }
 

@@ -1,24 +1,24 @@
 Survival percentages in the Class: 
-First class: 0.6296296296296297 % 
-Second class: 0.47282608695652173% 
-Third class: 0.24236252545824846% 
+First class: 0.0 % 
+Second class: 0.0% 
+Third class: 0.0% 
 Survival percentages by Gender: 
- Male: 0.18890814558058924 % 
-Female: 0.7420382165605095 % 
+ Male: 0.0 % 
+Female: 0.0 % 
 Survival rates by age: 
- Between 0 T0 10: 1.4615384615384615 % 
- Between 11 T0 20: 0.6197183098591549 % 
- Between 21 T0 30: 0.5793103448275863 % 
- Between 31 T0 40: 0.8214285714285714 % 
- Between 41 T0 50: 0.6470588235294118 % 
- Over 50 : 0.5238095238095238 %
-Survival percentages of those who have a family: 1.022857142857143 % 
-Survival percentages of those who not have a family: 0.22733612273361228 % 
+ Between 0 T0 10: 146.15384615384613 % 
+ Between 11 T0 20: 61.97183098591549 % 
+ Between 21 T0 30: 57.931034482758626 % 
+ Between 31 T0 40: 82.14285714285714 % 
+ Between 41 T0 50: 64.70588235294117 % 
+ Over 50 : 52.38095238095239 %
+Survival percentages of those who have a family: 102.28571428571429 % 
+Survival percentages of those who not have a family: 22.765363128491618 % 
 Survival percentages by Ticket Cost: 
- Between 0 To 10: 0.19940476190476192% 
-Between 11 To 30: 0.44368600682593856% 
-Over 30: 0.5822222222222222% 
+ Between 0 To 10: 0.0% 
+Between 11 To 30: 0.0% 
+Over 30: 0.0% 
 Survival rate on decks: 
- S Deck: 0.33695652173913043 % 
-C Deck: 0.5535714285714286% 
-Q Deck: 0.38961038961038963% 
+ S Deck: 0.0 % 
+C Deck: 0.0% 
+Q Deck: 0.0% 
